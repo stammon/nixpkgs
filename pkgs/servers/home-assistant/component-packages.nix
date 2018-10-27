@@ -2,7 +2,7 @@
 # Do not edit!
 
 {
-  version = "0.81.0";
+  version = "0.80.3";
   components = {
     "abode" = ps: with ps; [  ];
     "ads" = ps: with ps; [  ];
@@ -16,7 +16,6 @@
     "alarm_control_panel.concord232" = ps: with ps; [  ];
     "alarm_control_panel.demo" = ps: with ps; [  ];
     "alarm_control_panel.egardia" = ps: with ps; [  ];
-    "alarm_control_panel.elkm1" = ps: with ps; [  ];
     "alarm_control_panel.envisalink" = ps: with ps; [  ];
     "alarm_control_panel.homematicip_cloud" = ps: with ps; [  ];
     "alarm_control_panel.ialarm" = ps: with ps; [  ];
@@ -55,7 +54,6 @@
     "auth.mfa_setup_flow" = ps: with ps; [  ];
     "automation" = ps: with ps; [  ];
     "automation.event" = ps: with ps; [  ];
-    "automation.geo_location" = ps: with ps; [  ];
     "automation.homeassistant" = ps: with ps; [  ];
     "automation.litejet" = ps: with ps; [  ];
     "automation.mqtt" = ps: with ps; [ paho-mqtt ];
@@ -120,7 +118,6 @@
     "binary_sensor.netatmo" = ps: with ps; [  ];
     "binary_sensor.nx584" = ps: with ps; [  ];
     "binary_sensor.octoprint" = ps: with ps; [  ];
-    "binary_sensor.opentherm_gw" = ps: with ps; [  ];
     "binary_sensor.openuv" = ps: with ps; [  ];
     "binary_sensor.pilight" = ps: with ps; [  ];
     "binary_sensor.ping" = ps: with ps; [  ];
@@ -131,7 +128,6 @@
     "binary_sensor.random" = ps: with ps; [  ];
     "binary_sensor.raspihats" = ps: with ps; [  ];
     "binary_sensor.rest" = ps: with ps; [  ];
-    "binary_sensor.rflink" = ps: with ps; [  ];
     "binary_sensor.rfxtrx" = ps: with ps; [  ];
     "binary_sensor.ring" = ps: with ps; [  ];
     "binary_sensor.rpi_gpio" = ps: with ps; [  ];
@@ -213,9 +209,8 @@
     "climate" = ps: with ps; [  ];
     "climate.daikin" = ps: with ps; [  ];
     "climate.demo" = ps: with ps; [  ];
-    "climate.dyson" = ps: with ps; [  ];
     "climate.ecobee" = ps: with ps; [  ];
-    "climate.elkm1" = ps: with ps; [  ];
+    "climate.econet" = ps: with ps; [  ];
     "climate.ephember" = ps: with ps; [  ];
     "climate.eq3btsmart" = ps: with ps; [ construct ];
     "climate.evohome" = ps: with ps; [  ];
@@ -231,7 +226,6 @@
     "climate.knx" = ps: with ps; [  ];
     "climate.maxcube" = ps: with ps; [  ];
     "climate.melissa" = ps: with ps; [  ];
-    "climate.mill" = ps: with ps; [  ];
     "climate.modbus" = ps: with ps; [  ];
     "climate.mqtt" = ps: with ps; [ paho-mqtt ];
     "climate.mysensors" = ps: with ps; [  ];
@@ -301,6 +295,7 @@
     "cover.rflink" = ps: with ps; [  ];
     "cover.rfxtrx" = ps: with ps; [  ];
     "cover.rpi_gpio" = ps: with ps; [  ];
+    "cover.ryobi_gdo" = ps: with ps; [  ];
     "cover.scsgate" = ps: with ps; [  ];
     "cover.tahoma" = ps: with ps; [  ];
     "cover.tellduslive" = ps: with ps; [  ];
@@ -356,7 +351,6 @@
     "device_tracker.owntracks" = ps: with ps; [ libnacl paho-mqtt ];
     "device_tracker.owntracks_http" = ps: with ps; [ aiohttp-cors libnacl ];
     "device_tracker.ping" = ps: with ps; [  ];
-    "device_tracker.quantum_gateway" = ps: with ps; [  ];
     "device_tracker.ritassist" = ps: with ps; [  ];
     "device_tracker.sky_hub" = ps: with ps; [  ];
     "device_tracker.snmp" = ps: with ps; [ pysnmp ];
@@ -389,7 +383,6 @@
     "edp_redy" = ps: with ps; [  ];
     "egardia" = ps: with ps; [  ];
     "eight_sleep" = ps: with ps; [  ];
-    "elkm1" = ps: with ps; [  ];
     "emoncms_history" = ps: with ps; [  ];
     "emulated_hue" = ps: with ps; [ aiohttp-cors ];
     "emulated_hue.hue_api" = ps: with ps; [  ];
@@ -417,12 +410,11 @@
     "foursquare" = ps: with ps; [ aiohttp-cors ];
     "freedns" = ps: with ps; [  ];
     "fritzbox" = ps: with ps; [  ];
-    "frontend" = ps: with ps; [ aiohttp-cors ruamel_yaml ];
+    "frontend" = ps: with ps; [ aiohttp-cors ];
     "gc100" = ps: with ps; [  ];
     "geo_location" = ps: with ps; [  ];
     "geo_location.demo" = ps: with ps; [  ];
     "geo_location.geo_json_events" = ps: with ps; [  ];
-    "geo_location.nsw_rural_fire_service_feed" = ps: with ps; [  ];
     "goalfeed" = ps: with ps; [  ];
     "google" = ps: with ps; [ google_api_python_client httplib2 oauth2client ];
     "google_assistant" = ps: with ps; [ aiohttp-cors ];
@@ -514,7 +506,6 @@
     "knx" = ps: with ps; [  ];
     "konnected" = ps: with ps; [ aiohttp-cors netdisco ];
     "lametric" = ps: with ps; [  ];
-    "lifx" = ps: with ps; [  ];
     "light" = ps: with ps; [  ];
     "light.abode" = ps: with ps; [  ];
     "light.ads" = ps: with ps; [  ];
@@ -525,7 +516,6 @@
     "light.decora" = ps: with ps; [  ];
     "light.decora_wifi" = ps: with ps; [  ];
     "light.demo" = ps: with ps; [  ];
-    "light.elkm1" = ps: with ps; [  ];
     "light.enocean" = ps: with ps; [  ];
     "light.eufy" = ps: with ps; [  ];
     "light.flux_led" = ps: with ps; [  ];
@@ -603,7 +593,6 @@
     "lock.nello" = ps: with ps; [  ];
     "lock.nuki" = ps: with ps; [  ];
     "lock.sesame" = ps: with ps; [  ];
-    "lock.template" = ps: with ps; [  ];
     "lock.tesla" = ps: with ps; [  ];
     "lock.vera" = ps: with ps; [  ];
     "lock.verisure" = ps: with ps; [  ];
@@ -611,11 +600,11 @@
     "lock.wink" = ps: with ps; [  ];
     "lock.xiaomi_aqara" = ps: with ps; [  ];
     "lock.zwave" = ps: with ps; [  ];
-    "logbook" = ps: with ps; [ aiohttp-cors ruamel_yaml sqlalchemy ];
+    "logbook" = ps: with ps; [ aiohttp-cors sqlalchemy ];
     "logentries" = ps: with ps; [  ];
     "logger" = ps: with ps; [  ];
     "logi_circle" = ps: with ps; [  ];
-    "lovelace" = ps: with ps; [ ruamel_yaml ];
+    "lovelace" = ps: with ps; [  ];
     "lutron" = ps: with ps; [  ];
     "lutron_caseta" = ps: with ps; [  ];
     "mailbox" = ps: with ps; [ aiohttp-cors ];
@@ -655,7 +644,6 @@
     "media_player.itunes" = ps: with ps; [  ];
     "media_player.kodi" = ps: with ps; [ jsonrpc-async jsonrpc-websocket ];
     "media_player.lg_netcast" = ps: with ps; [  ];
-    "media_player.lg_soundbar" = ps: with ps; [  ];
     "media_player.liveboxplaytv" = ps: with ps; [  ];
     "media_player.mediaroom" = ps: with ps; [  ];
     "media_player.monoprice" = ps: with ps; [  ];
@@ -739,8 +727,7 @@
     "notify.group" = ps: with ps; [  ];
     "notify.hangouts" = ps: with ps; [  ];
     "notify.hipchat" = ps: with ps; [  ];
-    "notify.homematic" = ps: with ps; [ pyhomematic ];
-    "notify.html5" = ps: with ps; [ aiohttp-cors ruamel_yaml ];
+    "notify.html5" = ps: with ps; [ aiohttp-cors ];
     "notify.instapush" = ps: with ps; [  ];
     "notify.ios" = ps: with ps; [ aiohttp-cors zeroconf ];
     "notify.joaoapps_join" = ps: with ps; [  ];
@@ -777,7 +764,7 @@
     "notify.twilio_sms" = ps: with ps; [ aiohttp-cors twilio ];
     "notify.twitter" = ps: with ps; [  ];
     "notify.webostv" = ps: with ps; [  ];
-    "notify.xmpp" = ps: with ps; [ slixmpp ];
+    "notify.xmpp" = ps: with ps; [ pyasn1-modules pyasn1 sleekxmpp ];
     "notify.yessssms" = ps: with ps; [  ];
     "nuheat" = ps: with ps; [  ];
     "nuimo_controller" = ps: with ps; [  ];
@@ -785,12 +772,11 @@
     "onboarding" = ps: with ps; [ aiohttp-cors ];
     "onboarding.const" = ps: with ps; [  ];
     "onboarding.views" = ps: with ps; [  ];
-    "opentherm_gw" = ps: with ps; [  ];
     "openuv" = ps: with ps; [  ];
     "openuv.config_flow" = ps: with ps; [  ];
     "openuv.const" = ps: with ps; [  ];
-    "panel_custom" = ps: with ps; [ aiohttp-cors ruamel_yaml ];
-    "panel_iframe" = ps: with ps; [ aiohttp-cors ruamel_yaml ];
+    "panel_custom" = ps: with ps; [ aiohttp-cors ];
+    "panel_iframe" = ps: with ps; [ aiohttp-cors ];
     "persistent_notification" = ps: with ps; [  ];
     "pilight" = ps: with ps; [  ];
     "plant" = ps: with ps; [  ];
@@ -820,7 +806,6 @@
     "rflink" = ps: with ps; [  ];
     "rfxtrx" = ps: with ps; [  ];
     "ring" = ps: with ps; [  ];
-    "route53" = ps: with ps; [ boto3 ];
     "rpi_gpio" = ps: with ps; [  ];
     "rpi_pfio" = ps: with ps; [  ];
     "rss_feed_template" = ps: with ps; [ aiohttp-cors ];
@@ -828,7 +813,6 @@
     "satel_integra" = ps: with ps; [  ];
     "scene" = ps: with ps; [  ];
     "scene.deconz" = ps: with ps; [  ];
-    "scene.elkm1" = ps: with ps; [  ];
     "scene.homeassistant" = ps: with ps; [  ];
     "scene.hunterdouglas_powerview" = ps: with ps; [  ];
     "scene.knx" = ps: with ps; [  ];
@@ -905,7 +889,6 @@
     "sensor.efergy" = ps: with ps; [  ];
     "sensor.eight_sleep" = ps: with ps; [  ];
     "sensor.eliqonline" = ps: with ps; [  ];
-    "sensor.elkm1" = ps: with ps; [  ];
     "sensor.emoncms" = ps: with ps; [  ];
     "sensor.enocean" = ps: with ps; [  ];
     "sensor.enphase_envoy" = ps: with ps; [  ];
@@ -1009,7 +992,6 @@
     "sensor.openexchangerates" = ps: with ps; [  ];
     "sensor.openhardwaremonitor" = ps: with ps; [  ];
     "sensor.opensky" = ps: with ps; [  ];
-    "sensor.opentherm_gw" = ps: with ps; [  ];
     "sensor.openuv" = ps: with ps; [  ];
     "sensor.openweathermap" = ps: with ps; [ pyowm ];
     "sensor.otp" = ps: with ps; [ pyotp ];
@@ -1035,7 +1017,6 @@
     "sensor.ring" = ps: with ps; [  ];
     "sensor.ripple" = ps: with ps; [  ];
     "sensor.rmvtransport" = ps: with ps; [  ];
-    "sensor.rtorrent" = ps: with ps; [  ];
     "sensor.sabnzbd" = ps: with ps; [  ];
     "sensor.scrape" = ps: with ps; [ beautifulsoup4 ];
     "sensor.season" = ps: with ps; [ ephem ];
@@ -1081,7 +1062,6 @@
     "sensor.temper" = ps: with ps; [  ];
     "sensor.template" = ps: with ps; [  ];
     "sensor.tesla" = ps: with ps; [  ];
-    "sensor.thermoworks_smoke" = ps: with ps; [  ];
     "sensor.thethingsnetwork" = ps: with ps; [  ];
     "sensor.thinkingcleaner" = ps: with ps; [  ];
     "sensor.tibber" = ps: with ps; [  ];
@@ -1091,7 +1071,6 @@
     "sensor.tradfri" = ps: with ps; [  ];
     "sensor.trafikverket_weatherstation" = ps: with ps; [  ];
     "sensor.transmission" = ps: with ps; [ transmissionrpc ];
-    "sensor.transport_nsw" = ps: with ps; [  ];
     "sensor.travisci" = ps: with ps; [  ];
     "sensor.twitch" = ps: with ps; [  ];
     "sensor.uber" = ps: with ps; [  ];
@@ -1137,16 +1116,10 @@
     "shell_command" = ps: with ps; [  ];
     "shiftr" = ps: with ps; [ paho-mqtt ];
     "shopping_list" = ps: with ps; [ aiohttp-cors ];
-    "simplisafe" = ps: with ps; [  ];
-    "simplisafe.config_flow" = ps: with ps; [  ];
-    "simplisafe.const" = ps: with ps; [  ];
     "sisyphus" = ps: with ps; [  ];
     "skybell" = ps: with ps; [  ];
     "sleepiq" = ps: with ps; [  ];
     "smappee" = ps: with ps; [  ];
-    "smhi" = ps: with ps; [  ];
-    "smhi.config_flow" = ps: with ps; [  ];
-    "smhi.const" = ps: with ps; [  ];
     "snips" = ps: with ps; [ paho-mqtt ];
     "sonos" = ps: with ps; [  ];
     "spaceapi" = ps: with ps; [ aiohttp-cors ];
@@ -1177,7 +1150,6 @@
     "switch.doorbird" = ps: with ps; [  ];
     "switch.edimax" = ps: with ps; [  ];
     "switch.edp_redy" = ps: with ps; [  ];
-    "switch.elkm1" = ps: with ps; [  ];
     "switch.enocean" = ps: with ps; [  ];
     "switch.eufy" = ps: with ps; [  ];
     "switch.flux" = ps: with ps; [  ];
@@ -1218,7 +1190,6 @@
     "switch.raincloud" = ps: with ps; [  ];
     "switch.rainmachine" = ps: with ps; [  ];
     "switch.raspihats" = ps: with ps; [  ];
-    "switch.recswitch" = ps: with ps; [  ];
     "switch.rest" = ps: with ps; [  ];
     "switch.rflink" = ps: with ps; [  ];
     "switch.rfxtrx" = ps: with ps; [  ];
@@ -1244,7 +1215,6 @@
     "switch.tradfri" = ps: with ps; [  ];
     "switch.transmission" = ps: with ps; [ transmissionrpc ];
     "switch.tuya" = ps: with ps; [  ];
-    "switch.unifi" = ps: with ps; [  ];
     "switch.upcloud" = ps: with ps; [  ];
     "switch.velbus" = ps: with ps; [  ];
     "switch.vera" = ps: with ps; [  ];
@@ -1292,10 +1262,6 @@
     "tts.yandextts" = ps: with ps; [  ];
     "tuya" = ps: with ps; [  ];
     "twilio" = ps: with ps; [ aiohttp-cors twilio ];
-    "unifi" = ps: with ps; [  ];
-    "unifi.const" = ps: with ps; [  ];
-    "unifi.controller" = ps: with ps; [  ];
-    "unifi.errors" = ps: with ps; [  ];
     "upcloud" = ps: with ps; [  ];
     "updater" = ps: with ps; [ distro ];
     "upnp" = ps: with ps; [ aiohttp-cors ];
@@ -1318,10 +1284,6 @@
     "volvooncall" = ps: with ps; [  ];
     "vultr" = ps: with ps; [ vultr ];
     "wake_on_lan" = ps: with ps; [ wakeonlan ];
-    "water_heater" = ps: with ps; [  ];
-    "water_heater.demo" = ps: with ps; [  ];
-    "water_heater.econet" = ps: with ps; [  ];
-    "water_heater.wink" = ps: with ps; [  ];
     "waterfurnace" = ps: with ps; [  ];
     "watson_iot" = ps: with ps; [  ];
     "weather" = ps: with ps; [  ];
@@ -1334,7 +1296,6 @@
     "weather.met" = ps: with ps; [  ];
     "weather.metoffice" = ps: with ps; [  ];
     "weather.openweathermap" = ps: with ps; [ pyowm ];
-    "weather.smhi" = ps: with ps; [  ];
     "weather.yweather" = ps: with ps; [ yahooweather ];
     "weather.zamg" = ps: with ps; [  ];
     "webhook" = ps: with ps; [ aiohttp-cors ];
@@ -1363,7 +1324,6 @@
     "zone.zone" = ps: with ps; [  ];
     "zoneminder" = ps: with ps; [  ];
     "zwave" = ps: with ps; [ pydispatcher python_openzwave ];
-    "zwave.config_flow" = ps: with ps; [  ];
     "zwave.const" = ps: with ps; [  ];
     "zwave.discovery_schemas" = ps: with ps; [  ];
     "zwave.node_entity" = ps: with ps; [  ];
